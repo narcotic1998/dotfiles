@@ -1,0 +1,19 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Naren
+	email = 31644585+narcotic1998@users.noreply.github.com
+# Please adapt and uncomment the following lines:
+#	name = Narenderen
+#	email = naren-9280@naren-9280.localzoho.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[merge]
+	tool = diffmerge
+[mergetool "diffmerge"]
+	cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
+	trustExitCode = true
+[mergetool]
+	keepBackup = false

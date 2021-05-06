@@ -11,3 +11,8 @@ alias mergemybranch='mergebranch ZOHOLIVESUPPORT_NARENDEREN_BRANCH'
 alias mergenewui='mergebranch ZOHOLIVESUPPORT_NEWUI_BRANCH'
 alias mergemaster='mergebranch master'
 alias log='git log --graph --pretty=oneline'
+alias reset-soft='git reset --soft HEAD^'
+alias reset-hard='git reset --hard HEAD~'
+alias stashlist="git stash list"
+alias pop="git stash pop"
+alias checkout="git checkout"

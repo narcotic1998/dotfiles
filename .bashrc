@@ -1,3 +1,5 @@
+export PATH=/usr/bin:$PATH
+
 function run-dev() {
      cd /Volumes/ZOHO/repo/development/webapps/$1 && npm run dev
 }
